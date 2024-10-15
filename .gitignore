@@ -1,0 +1,53 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.sln.ide
+
+# Visual Studio
+.vscode/
+.vs/
+*.db
+*.db-journal
+*.pdb
+*.msscci
+*.cache
+*.log
+
+# Rider
+.idea/
+*.sln.iml
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[xX]64/
+[xX]86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm][Pp]/
+[Aa][Rr][Mm][Xx]/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+
+# User-specific files
+*.sln.docstates
+*.userprefs
+*.sln.ide
+
+# Secrets
+appsettings.Development.json
+appsettings.json
+
+# Publish output
+publish/
+
+# Other
+*.vs/
+*.vscode/
+*.swp
+*.swo
+*.swo
+*.lock
+
