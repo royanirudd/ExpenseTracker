@@ -6,6 +6,9 @@ ViewData["Title"] = "Expenses";
 
     <div class="text-center">
         <h1 class="display-4">Expenses</h1>
+        <br />
+        <hr />
+        <h3> Total Expense $@ViewBag.Expenses </h3>
 
         <br />
         <table class="table">
@@ -14,6 +17,7 @@ ViewData["Title"] = "Expenses";
                     <th>Id</th>
                     <th>Value</th>
                     <th>Description</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,6 +33,10 @@ ViewData["Title"] = "Expenses";
                     <td>
                         @expense.Description
                     </td>
+                    <td>
+                        <a asp-action="CreateEditExpense" asp-route-id="@expense.Id">Edit</a>
+                        <a asp-controller="Home" asp-action="DeleteExpense" asp-route-id="@expense.Id"
+                            onclick="return confirm('Are you sure you want to delete this expense?');">Delete</a>
                 </tr>
                 }
                 }
